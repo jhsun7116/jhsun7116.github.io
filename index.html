@@ -59,7 +59,7 @@
   .skill-tags { display: flex; flex-wrap: wrap; gap: 8px; }
   .skill-tag { background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; font-size: 13px; }
 
-  /* PROJECTS */
+  /* TESTSTING */
   .project-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
   .project-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: .75rem; flex-wrap: wrap; gap: 8px; }
   .project-title { font-weight: 700; font-size: 16px; }
@@ -78,7 +78,7 @@
   .tool-tag { background: var(--bg2); border: 1px solid var(--border); border-radius: 6px; padding: 3px 10px; font-size: 12px; color: var(--muted); }
   .project-link { font-size: 13px; color: var(--primary); text-decoration: none; font-weight: 500; }
 
-  /* BUG REPORT */
+  /* AUTO-TOOL */
   .bug-card { background: var(--bg); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 1rem; }
   .bug-header { padding: .75rem 1.25rem; background: var(--bg2); border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
   .bug-id { font-size: 12px; font-weight: 700; color: var(--muted); }
@@ -112,16 +112,16 @@
 <nav>
   <div class="nav-logo">장효선 · 소프트웨어 테스터</div>
   <div class="nav-links">
-    <a href="#projects">프로젝트</a>
-    <a href="#bugs">버그 리포트</a>
-    <a href="#skills">스킬</a>
+    <a href="#testing">테스팅 기초 지식</a>
+    <a href="#auto">자동화 툴</a>
+    <a href="#skills">기타 경력</a>
   </div>
 </nav>
 
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-title">프로젝트</div>
+<!-- TESTSTING -->
+<section id="testing">
+  <div class="section-title">테스팅 기초 지식</div>
 
   <div class="project-card">
     <div class="project-header">
@@ -206,10 +206,54 @@
  
 </section>
 
-<!-- BUG REPORTS -->
-<section id="bugs">
+<!-- AUTO-TOOL -->
+<section id="auto">
   <div class="section-title">버그 리포트 샘플</div>
 
+ 
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">Selenium활용 멜론에서 가사 가져오기</div>
+    </div>
+    <div class="project-desc">사용자가 반복적으로 수행해야 하는 검색 → 앨범 이동 → 곡 선택 → 가사 복사 → 파일 저장 과정을 자동화하여 작업 효율성을 향상시키는 것을 목표했다.</div>
+    <div class="project-metrics">
+    </div>
+    <div class="project-tools">
+      <span class="tool-tag">Python</span>
+      <span class="tool-tag">Selenium</span>
+    </div>
+    <a href="https://github.com/jhsun7116/melon_lyrics_selenium" class="project-link">→ GitHub에서 보기</a>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">Selenium 활용 로그인 테스트</div>
+    </div>
+    <div class="project-desc">Selenium과 Pytest를 활용하여 로그인/로그아웃 기능을 자동화하였고, POM 구조와 데이터 기반 테스트를 적용해 유지보수 가능한 자동화 테스트 기반을 구현했다.</div>
+    <div class="project-metrics">
+    </div>
+    <div class="project-tools">
+      <span class="tool-tag">Python</span>
+      <span class="tool-tag">Selenium</span>
+    </div>
+    <a href="#" class="project-link">→ GitHub에서 보기</a>
+  </div>
+
+  <div class="project-card">
+    <div class="project-header">
+      <div class="project-title">playwright를 활용 회원가입</div>
+    </div>
+    <div class="project-desc">Page Object Model 구조 사용한 회원가입.</div>
+    <div class="project-metrics">
+    </div>
+    <div class="project-tools">
+      <span class="tool-tag">Python</span>
+      <span class="tool-tag">playwright</span>
+    </div>
+    <a href="#" class="project-link">→ GitHub에서 보기</a>
+  </div>
+
+ 
   <div class="bug-card">
     <div class="bug-header">
       <span class="bug-id">BUG-001</span>
