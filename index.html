@@ -124,7 +124,9 @@
   <div class="section-title">테스팅 기초 지식</div>
 
   <div class="project-card">
-    <div class="project-header">
+  <img src="https://raw.githubusercontent.com/jhsun7116/meal_ticket_test/main/image.png"
+       style="width:100%; height:160px; object-fit:cover; border-radius:8px; margin-bottom:12px;">
+  <div class="project-header">
       <div class="project-title">식권 자판기 시뮬레이터 테스트</div>
     </div>
     <div class="project-desc">사용자가 금액을 충전하고 식권을 구매하는 과정에서 정상적인 결제 및 상태 변경이 이루어지는지 확인하고, 예외 상황에서도 시스템이 올바르게 동작하는지 검증하는 것을 목표로 했다.</div>
@@ -158,58 +160,12 @@
     <a href="https://github.com/jhsun7116/book_search" class="project-link">→ GitHub에서 보기</a>
   </div>
 
-  <div class="project-card">
-    <div class="project-header">
-      <div class="project-title">Selenium활용 멜론에서 가사 가져오기</div>
-    </div>
-    <div class="project-desc">사용자가 반복적으로 수행해야 하는 검색 → 앨범 이동 → 곡 선택 → 가사 복사 → 파일 저장 과정을 자동화하여 작업 효율성을 향상시키는 것을 목표했다.</div>
-    <div class="project-metrics">
-    </div>
-    <div class="project-tools">
-      <span class="tool-tag">Python</span>
-      <span class="tool-tag">Selenium</span>
-    </div>
-    <a href="https://github.com/jhsun7116/melon_lyrics_selenium" class="project-link">→ GitHub에서 보기</a>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <div class="project-title">Selenium 활용 로그인 테스트</div>
-    </div>
-    <div class="project-desc">Selenium과 Pytest를 활용하여 로그인/로그아웃 기능을 자동화하였고, POM 구조와 데이터 기반 테스트를 적용해 유지보수 가능한 자동화 테스트 기반을 구현했다.</div>
-    <div class="project-metrics">
-    </div>
-    <div class="project-tools">
-      <span class="tool-tag">Python</span>
-      <span class="tool-tag">Selenium</span>
-    </div>
-    <a href="#" class="project-link">→ GitHub에서 보기</a>
-  </div>
-
-  <div class="project-card">
-    <div class="project-header">
-      <div class="project-title">playwright를 활용 회원가입</div>
-    </div>
-    <div class="project-desc">Page Object Model 구조 사용한 회원가입.</div>
-    <div class="project-metrics">
-    </div>
-    <div class="project-tools">
-      <span class="tool-tag">Python</span>
-      <span class="tool-tag">playwright</span>
-    </div>
-    <a href="#" class="project-link">→ GitHub에서 보기</a>
-  </div>
-
-
-
-
  
 </section>
 
 <!-- AUTO-TOOL -->
 <section id="auto">
-  <div class="section-title">버그 리포트 샘플</div>
-
+  <div class="section-title">자동화 툴</div>
  
   <div class="project-card">
     <div class="project-header">
@@ -254,64 +210,6 @@
   </div>
 
  
-  <div class="bug-card">
-    <div class="bug-header">
-      <span class="bug-id">BUG-001</span>
-      <span class="bug-title">결제 완료 후 재고 수량이 차감되지 않음</span>
-      <span class="severity sev-critical">Critical</span>
-    </div>
-    <div class="bug-body">
-      <div class="bug-row">
-        <span class="bug-label">환경</span><span>Chrome 122 / Windows 11 / 스테이징 서버</span>
-      </div>
-      <div class="bug-row">
-        <span class="bug-label">재현 단계</span>
-        <div class="steps-list">
-          <div class="bug-step">재고 1개 남은 상품을 장바구니에 담는다</div>
-          <div class="bug-step">결제 정보 입력 후 주문 완료</div>
-          <div class="bug-step">상품 상세 페이지로 이동해 재고 확인</div>
-        </div>
-      </div>
-      <div class="bug-row">
-        <span class="bug-label">예상 결과</span>
-        <span class="result-expect">재고가 0으로 표시되고 "품절" 상태로 변경됨</span>
-      </div>
-      <div class="bug-row">
-        <span class="bug-label">실제 결과</span>
-        <span class="result-actual">재고가 1로 그대로 표시되고 추가 구매 가능 상태 유지됨</span>
-      </div>
-    </div>
-  </div>
-
-  <div class="bug-card">
-    <div class="bug-header">
-      <span class="bug-id">BUG-002</span>
-      <span class="bug-title">로그인 실패 시 오류 메시지 미표시</span>
-      <span class="severity sev-major">Major</span>
-    </div>
-    <div class="bug-body">
-      <div class="bug-row">
-        <span class="bug-label">환경</span><span>Safari 17 / macOS Sonoma</span>
-      </div>
-      <div class="bug-row">
-        <span class="bug-label">재현 단계</span>
-        <div class="steps-list">
-          <div class="bug-step">로그인 페이지에서 잘못된 비밀번호 입력</div>
-          <div class="bug-step">로그인 버튼 클릭</div>
-        </div>
-      </div>
-      <div class="bug-row">
-        <span class="bug-label">예상 결과</span>
-        <span class="result-expect">"비밀번호가 일치하지 않습니다" 오류 메시지 표시</span>
-      </div>
-      <div class="bug-row">
-        <span class="bug-label">실제 결과</span>
-        <span class="result-actual">빈 화면으로 리로드되며 아무 메시지도 표시되지 않음</span>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- SKILLS -->
 <section id="skills">
   <div class="section-title">스킬</div>
